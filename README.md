@@ -20,6 +20,16 @@ Underwater imagery often suffers from poor visibility, low contrast, and non-uni
 
 This project implements an efficient and interpretable framework for enhancing low-light underwater images using **local contrast estimation** and **multi-scale fusion**. Unlike black-box deep learning models, this method is grounded in physical intuition and image formation theory.
 
+The original implementation of L²UWE was developed in **MATLAB**. This repository provides a **Python-based reimplementation** based solely on the methodology and equations described in the original paper.
+
+All components were recreated from scratch using OpenCV, NumPy, and Matplotlib, with a strong emphasis on:
+
+- Code clarity
+- Educational visualization
+- Faithful adherence to the paper’s pipeline
+
+This reimplementation allowed me to deepen my understanding of image formation models, local contrast theory, and underwater image enhancement techniques through direct engagement with the algorithmic design.
+
 > Original Images V.S. Processed Images can be previewed as listed below:
 
 <div align="center">
@@ -43,18 +53,6 @@ Through this implementation, I:
 This hands-on research helped bridge theory with implementation and deepened my understanding of image enhancement challenges in real-world environments.
 
 ---
-
-## About This Implementation
-
-The original implementation of L²UWE was developed in **MATLAB**. This repository provides a **Python-based reimplementation** based solely on the methodology and equations described in the original paper.
-
-All components were recreated from scratch using OpenCV, NumPy, and Matplotlib, with a strong emphasis on:
-
-- Code clarity
-- Educational visualization
-- Faithful adherence to the paper’s pipeline
-
-This reimplementation allowed me to deepen my understanding of image formation models, local contrast theory, and underwater image enhancement techniques through direct engagement with the algorithmic design.
 
 ## Features
 
