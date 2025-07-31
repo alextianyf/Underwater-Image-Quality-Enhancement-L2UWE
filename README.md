@@ -76,32 +76,36 @@ This implementation is based on the method proposed by Marques and Albu[2].
 
 ## File Structure
 
-This section provides a detailed overview of the project directory structure, helping you understand where key files and resources are located.
+This section provides a detailed overview of the project directory structure to help you understand where key files and resources are located.
 
 ```text
 .
-├── .venv/                                # (Not included) Virtual environment folder
+├── .venv/                                # (Optional) Local Python virtual environment
 ├── data/
-│   ├── Advertising_simple.csv            # Dataset for Simple Linear Regression
-│   └── Advertising.csv                   # Dataset for Multiple Linear Regression
-├── images/                               # Conceptual illustrations and plots (exported from notebooks)
-├── notebooks/                            # Main exploratory and explanatory Jupyter Notebooks
-│   ├── 01-Simple-LinearRegression.ipynb
-│   └── 02-Multiple-LinearRegression.ipynb
-├── spend_sale_lib/                       # Custom Python module for reusable components
-│   ├── feature-selection.py              # Manually implemented forward & backward selection
-│   ├── Gradient_Descend.py               # Manual implementation of Gradient Descent algorithm
-│   ├── IQR.py                            # IQR-based denoising helper
-│   └── OLS.py                            # Manual implementation of OLS (Ordinary Least Squares)
-├── theory-docs/                          # Supplementary theoretical documents and derivations
-│   ├── 01-OLS-single-variable.md         # Mathematical proof for single-variable OLS
-│   ├── 02-variance-stddev-stderr.md      # Concepts: Variance, Standard Deviation, Standard Error
-│   ├── 03-SE-single-variable.ipynb       # Step-by-step derivation of Standard Error (single variable)
-│   └── 04-OLS-MLR.ipynb                  # OLS derivation for Multiple Linear Regression
+│   ├── additional-data.zip.csv           # Additional dataset used for experimentation
+│   ├── sample-1.jpg                      # Sample input testing image 1
+│   ├── sample-2.jpg                      # Sample input testing image 2
+│   ├── sample-3.jpg                      # Sample input testing image 3
+│   └── sample-4.jpg                      # Sample input testing image 4
+├── images/                               # Conceptual illustrations and visual outputs
+│   ├── L2UWE-pipeline.png                # Pipeline diagram
+│   └── output.png                        # Side-by-side results of original vs. enhanced images
+├── lib/
+│   └── image_enhancement_pipeline.py     # Modular implementation of the L²UWE pipeline
+├── project-report/
+│   ├── L2UWE-Presentation-Slides.pptx    # Final presentation slides
+│   └── ProjectReport=AlexTian.pdf        # Project report document
+├── reference-papers/
+│   ├── L2UWE-original-paper.pdf          # Original paper in PDF format
+│   └── Other reference resources         
+├── .gitignore                            # Ignore Python environment files and caches
+├── L2UWE-Framework.ipynb                 # Jupyter notebook for step-by-step demonstration
 ├── LICENSE                               # MIT License
-├── README.md                             # Project overview (you are here)
-└── requirements.txt                      # Required Python packages to run the project
+├── README.md                             # You are here
+└── requirements.txt                      # Python dependencies for reproducibility
 ```
+
+---
 
 ## Development Environment Setup (with Virtual Environment)
 
